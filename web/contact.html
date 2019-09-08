@@ -1,0 +1,78 @@
+
+<html>
+<head>
+    <title>Contact</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <style>
+        #img{
+            width: 200px;
+        }
+        div {/*控制图片最终大小，防止放大后图片大小溢出*/
+            overflow : hidden;
+            text-align: center;
+        }
+
+        img {
+            transition : -webkit-transform 3s;/*延迟效果*/
+        }
+
+        img:hover {
+            transform: scale(1.5,1.5);/*放大的倍数*/
+        }
+        .div1:hover img{
+            display:block
+        }
+        .div1 img{
+            display:none;
+            height:200px;
+            width:200px;
+        }
+        .div2:hover img{
+            display:block
+        }
+        .div2 img{
+            display:none;
+            height:200px;
+            width:200px;
+        }
+    </style>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("demo").innerHTML="1012373557@qq.com";
+        }
+    </script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+</head>
+<body>
+<img id="img" src="img/微信图标.jpg" width="150" height="150"/>
+<br>
+<div class="div1">
+    <p >二维码 for wechat</p>
+    <img src="img/wechat.jpg"  />
+</div>
+<div>
+    <img src="img/qq图标.jpg" width="150" height="150"/>
+    </div>
+<div class="div2">
+    <p>二维码 for qq</p>
+    <img src="img/qq码.jpg"/>
+</div>
+<p id="demo">电子邮箱</p>
+<button type="button" onclick="myFunction()">点击显示邮箱地址</button>
+<div class="one">
+    <a href='#' onclick="history.go( -1 )">返回</a>
+</div>
+<style type="text/css">
+    body{
+        background-image: url(img/草.jpg);
+        background-size:cover;
+    }
+</style>
+<script src="http://www.lmlblog.com/winter/templets/xq/js/snowy.js"></script>
+<style type="text/css">
+    .snow-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;}</style>
+<div class="snow-container"></div>
+</body>
+</html>

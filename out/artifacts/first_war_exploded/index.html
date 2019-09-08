@@ -1,0 +1,68 @@
+
+  <head>
+      <meta charset="UTF-8";>
+    <title>$Title$</title>
+      <link href="index.css" rel="stylesheet" type="text/css" />
+      <style type="text/css">
+          .tabs {
+              text-align: center;
+          }
+
+          .tabs li {
+              display: inline-block;
+              padding: 0 0 10px 0;
+          }
+          a {
+              text-decoration: none;
+              color: #1c84c6;
+          }
+          .tabs li a {
+              display: block;
+              min-width: 70px;
+              padding: 6px 12px;
+              background-color: #f5f5f5;
+              color: #333;
+              line-height: 1.42857143;
+              text-align: center;
+              border: 1px solid #ddd;
+              border-radius: 2px;
+
+          }
+          .tabs li.active a {
+              background-color: aquamarine;
+              border-color: #1c84c6;
+              color: #fff;
+          }
+          a:link{color:white}
+          a:visited{color: purple; }
+          a:hover{color:yellow;text-decoration:underline;}
+          a:active{color:red;}
+      </style>
+  </head>
+  <p align="center">
+      <a href="Hello">第一个动态web项目</a>
+  </p>
+  <div class="tabs" style="display: block;">
+      <ul>
+          <li class="active" οnclick="changeCond(this)"><a href= "me.jsp">个人主页</a></li>
+          <li class="active" οnclick="changeCond(this)" value="4"><a href="hobby.jsp">兴趣爱好</a></li>
+          <li class="active" οnclick="changeCond(this)" value="3"><a href="contact.jsp">联系方式</a></li>
+          <li class="active" οnclick="changeCond(this)" value="0"><a href="Hello">功能扩展中</a></li>
+      </ul>
+  </div><br>
+  <p1>
+          <%
+              out.println("你的 IP 地址 " + request.getRemoteAddr());
+          %>
+  </p1>
+      <p>
+          今天的日期是: <%= (new java.util.Date()).toLocaleString()%>
+      </p>
+      <style type="text/css">
+          body{
+              background-image: url(img/school.jpg);
+              background-size:cover;
+          }
+      </style>
+  </body>
+</html>

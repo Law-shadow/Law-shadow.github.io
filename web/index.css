@@ -1,0 +1,52 @@
+#div1{
+    Background:#ffffff;
+    font-size: 30px;
+    color:crimson;
+    Margin:250px;
+    padding: 5px;
+    text-align:center;
+    font-weight:bold;
+    height:1px
+}
+#div1:hover{background-color: bisque;}
+img:hover{border:1px solid red;}
+a{text-decoration:none;font-size:18px;}
+a:link{color:white}
+a:visited{color: purple; }
+a:hover{color:yellow;text-decoration:underline;}
+a:active{color:red;}
+.one{ height:100px; width:200px; background: white; line-height:170px; overflow:hidden;}
+
+#box{ width:150px; height:100px;   border:1px solid; padding:20px; margin:10px; overflow:auto;
+}
+#div2{ width:200px; height:200px; border:1px solid red; float:right; }
+
+.tabs {
+    text-align: center;
+}
+
+.tabs li {
+    display: inline-block;
+    padding: 0 0 10px 0;
+}
+a {
+    text-decoration: none;
+    color: #1c84c6;
+}
+.tabs li a {
+    display: block;
+    min-width: 70px;
+    padding: 6px 12px;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.42857143;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+
+}
+.tabs li.active a {
+    background-color: aquamarine;
+    border-color: #1c84c6;
+    color: #fff;
+}
